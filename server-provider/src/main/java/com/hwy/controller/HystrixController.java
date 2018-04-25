@@ -16,11 +16,11 @@ public class HystrixController {
     @RequestMapping("/hystrix")
     public String hystrix() {
         try {
-            Thread.sleep(5000L);
+            Thread.sleep(3000L);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        return "hystrix test!";
+        return "this message from provider hystrix test!";
     }
 
 }
