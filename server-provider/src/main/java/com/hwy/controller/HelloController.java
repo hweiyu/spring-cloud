@@ -15,6 +15,6 @@ public class HelloController {
 
     @RequestMapping("/hello")
     public String hello() {
-        return "hello, I'm server provider";
+        return "hello, welcome to provider";
     }
 }
