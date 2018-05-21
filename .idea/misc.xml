@@ -8,6 +8,9 @@
         <option value="$PROJECT_DIR$/eureka-server-center/pom.xml" />
         <option value="$PROJECT_DIR$/server-provider/pom.xml" />
         <option value="$PROJECT_DIR$/server-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/server-consumer-ribbon/pom.xml" />
+        <option value="$PROJECT_DIR$/server-consumer-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/stream-rabbitmq/pom.xml" />
       </list>
     </option>
   </component>

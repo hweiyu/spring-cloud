@@ -9,6 +9,7 @@
         <module name="eureka-server-center" />
         <module name="server-consumer" />
         <module name="server-provider" />
+        <module name="stream-rabbitmq" />
       </profile>
     </annotationProcessing>
   </component>
