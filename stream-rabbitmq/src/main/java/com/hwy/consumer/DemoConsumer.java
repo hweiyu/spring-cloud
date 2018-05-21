@@ -1,8 +1,10 @@
 package com.hwy.consumer;
 
+import com.hwy.bean.DemoBean;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.cloud.stream.messaging.Sink;
+import org.springframework.messaging.Message;
 
 /**
  * @author huangweiyu
@@ -15,7 +17,7 @@ import org.springframework.cloud.stream.messaging.Sink;
 public class DemoConsumer {
 
     @StreamListener(Sink.INPUT)
-    public void consumer(Object message) {
-        System.out.println("===========consumer:" + message);
+    public void consumer(Message<DemoBean> message) {
+        System.out.println("===========consumer:" + message.getPayload());
     }
 }

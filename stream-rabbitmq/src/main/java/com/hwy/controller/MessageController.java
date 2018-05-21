@@ -21,7 +21,7 @@ public class MessageController {
 
     @RequestMapping(value = "provider/{message}")
     public String sendMessage(@PathVariable("message") String message) {
-        demoProvider.provider(message);
+        demoProvider.message(message);
         return "send success";
     }
 }
