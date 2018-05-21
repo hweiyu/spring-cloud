@@ -1,9 +1,10 @@
 package com.hwy.consumer;
 
 import com.hwy.bean.DemoBean;
+import com.hwy.cons.Cons;
+import com.hwy.provider.DemoSource;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
-import org.springframework.cloud.stream.messaging.Sink;
 import org.springframework.messaging.Message;
 
 /**
@@ -13,10 +14,10 @@ import org.springframework.messaging.Message;
  * @Description: 描述
  * @date 2018/5/21 17:21
  **/
-@EnableBinding(Sink.class)
+@EnableBinding(DemoSink.class)
 public class DemoConsumer {
 
-    @StreamListener(Sink.INPUT)
+    @StreamListener(Cons.DEMO_CHANNEL_NAME)
     public void consumer(Message<DemoBean> message) {
         System.out.println("===========consumer:" + message.getPayload());
     }
