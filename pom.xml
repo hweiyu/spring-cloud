@@ -16,6 +16,7 @@
         <module>server-consumer</module>
         <module>server-consumer-ribbon</module>
         <module>server-consumer-feign</module>
+        <module>stream-rabbitmq</module>
     </modules>
 
 </project>
