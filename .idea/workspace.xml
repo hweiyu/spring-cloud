@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c16baa67-0b29-4f23-9dc2-e5fd48a02219" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud.iml" afterPath="$PROJECT_DIR$/spring-cloud.iml" />
     </list>
     <list id="df08d32d-2401-4843-83fd-5a0a31249e81" name="not commit" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -197,6 +195,11 @@
             <path>
               <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -405,7 +408,7 @@
       <workItem from="1526960946299" duration="473000" />
       <workItem from="1526969376719" duration="1178000" />
       <workItem from="1526973808208" duration="6723000" />
-      <workItem from="1526991877326" duration="82000" />
+      <workItem from="1526991877326" duration="156000" />
     </task>
     <task id="LOCAL-00001" summary="push resource code">
       <created>1524628185932</created>
@@ -505,11 +508,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526980772637</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="push idea config files">
+      <created>1526992011630</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1526992011630</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30043000" />
+    <option name="totallyTimeSpent" value="30117000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -586,7 +596,8 @@
     <MESSAGE value="push hystrix resource code" />
     <MESSAGE value="push rabbitmq resource code" />
     <MESSAGE value="push zuul resource code" />
-    <option name="LAST_COMMIT_MESSAGE" value="push zuul resource code" />
+    <MESSAGE value="push idea config files" />
+    <option name="LAST_COMMIT_MESSAGE" value="push idea config files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
