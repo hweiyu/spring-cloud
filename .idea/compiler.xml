@@ -16,16 +16,15 @@
         <module name="stream-rabbitmq" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="eureka-server-center" target="1.8" />
-      <module name="rabbitmq-provider" target="1.8" />
       <module name="server-consumer" target="1.8" />
       <module name="server-consumer-feign" target="1.8" />
       <module name="server-consumer-ribbon" target="1.8" />
       <module name="server-provider" target="1.8" />
       <module name="server-provider2" target="1.8" />
       <module name="server-zuul" target="1.8" />
-      <module name="spring-cloud" target="1.5" />
+      <module name="spring-cloud" target="1.8" />
       <module name="stream-rabbitmq" target="1.8" />
     </bytecodeTargetLevel>
   </component>
