@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c16baa67-0b29-4f23-9dc2-e5fd48a02219" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-provider2/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-provider2/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-provider2/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-provider2/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-provider2/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-provider2/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-provider2/src/main/java/com/hwy/ServerProvider2Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-provider2/src/main/java/com/hwy/controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-provider2/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-zuul/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-zuul/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-zuul/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-zuul/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-zuul/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-zuul/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-zuul/src/main/java/com/hwy/ServerZuulApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-zuul/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <list id="df08d32d-2401-4843-83fd-5a0a31249e81" name="not commit" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -59,8 +37,8 @@
       <file leaf-file-name="EurekaServerCenterApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eureka-server-center/src/main/java/com/hwy/eurekaservercenter/EurekaServerCenterApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="14" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="19" />
+            <state relative-caret-position="297">
+              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -68,8 +46,8 @@
       <file leaf-file-name="ServerProviderApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server-provider/src/main/java/com/hwy/ServerProviderApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="186">
+              <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,8 +58,17 @@
       <file leaf-file-name="ServerProvider2Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server-provider2/src/main/java/com/hwy/ServerProvider2Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="153">
+              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eureka-server-center/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -89,17 +76,20 @@
       <file leaf-file-name="ServerZuulApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server-zuul/src/main/java/com/hwy/ServerZuulApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="165">
+              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server-zuul/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="66">
+                <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -109,8 +99,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -126,14 +116,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/eureka-server-center/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/eureka-server-center/src/main/java/com/hwy/eurekaservercenter/EurekaServerCenterApplication.java" />
         <option value="$PROJECT_DIR$/eureka-server-center/pom.xml" />
         <option value="$PROJECT_DIR$/server-provider/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/server-provider/src/main/java/com/hwy/serverprovider/ServerProviderApplication.java" />
         <option value="$PROJECT_DIR$/server-provider/src/main/java/com/hwy/serverprovider/HelloController.java" />
         <option value="$PROJECT_DIR$/server-provider/src/main/java/com/hwy/serverprovider/MyHelloController.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/server-provider/src/main/java/com/hwy/ServerProviderApplication.java" />
         <option value="$PROJECT_DIR$/server-consumer/src/main/java/com/hwy/controller/HelloFromProviderController.java" />
         <option value="$PROJECT_DIR$/server-provider/src/main/java/com/hwy/controller/HelloController.java" />
@@ -173,8 +161,12 @@
         <option value="$PROJECT_DIR$/server-zuul/src/main/java/com/hwy/ServerZuulApplication.java" />
         <option value="$PROJECT_DIR$/server-zuul/pom.xml" />
         <option value="$PROJECT_DIR$/server-provider/pom.xml" />
-        <option value="$PROJECT_DIR$/server-zuul/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/server-provider2/src/main/java/com/hwy/ServerProvider2Application.java" />
+        <option value="$PROJECT_DIR$/server-zuul/src/main/java/com/hwy/config/FilterConfig.java" />
+        <option value="$PROJECT_DIR$/server-zuul/src/main/java/com/hwy/config/AccessFilter.java" />
+        <option value="$PROJECT_DIR$/server-zuul/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/eureka-server-center/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -203,241 +195,6 @@
             <path>
               <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server-center" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server-center" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server-center" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server-center" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server-center" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="eurekaservercenter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server-center" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-consumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hwy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hwy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hwy" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hwy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hwy" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-provider2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-zuul" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hwy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="server-zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -484,7 +241,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServerZuulApplication">
+  <component name="RunManager" selected="Spring Boot.EurekaServerCenterApplication">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -599,7 +356,7 @@
       <workItem from="1526950429944" duration="1021000" />
       <workItem from="1526960946299" duration="473000" />
       <workItem from="1526969376719" duration="1178000" />
-      <workItem from="1526973808208" duration="5273000" />
+      <workItem from="1526973808208" duration="6723000" />
     </task>
     <task id="LOCAL-00001" summary="push resource code">
       <created>1524628185932</created>
@@ -671,14 +428,43 @@
       <option name="project" value="LOCAL" />
       <updated>1526950509513</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="push zuul resource code">
+      <created>1526979642708</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1526979642708</updated>
+    </task>
+    <task id="LOCAL-00012" summary="push zuul resource code">
+      <created>1526980079863</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1526980079863</updated>
+    </task>
+    <task id="LOCAL-00013" summary="push zuul resource code">
+      <created>1526980155253</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1526980155253</updated>
+    </task>
+    <task id="LOCAL-00014" summary="push zuul resource code">
+      <created>1526980772637</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1526980772637</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28511000" />
+    <option name="totallyTimeSpent" value="29961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
@@ -699,11 +485,11 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.46673936" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4089422" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4089422" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="CheckStyle" order="8" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21748401" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21748401" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -755,7 +541,8 @@
     <MESSAGE value="push feign resource code" />
     <MESSAGE value="push hystrix resource code" />
     <MESSAGE value="push rabbitmq resource code" />
-    <option name="LAST_COMMIT_MESSAGE" value="push rabbitmq resource code" />
+    <MESSAGE value="push zuul resource code" />
+    <option name="LAST_COMMIT_MESSAGE" value="push zuul resource code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -763,20 +550,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-javanica/1.5.12/hystrix-javanica-1.5.12.jar!/com/netflix/hystrix/contrib/javanica/utils/CommonUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-javanica/1.5.12/hystrix-javanica-1.5.12.jar!/com/netflix/hystrix/contrib/javanica/utils/FallbackMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-javanica/1.5.12/hystrix-javanica-1.5.12.jar!/com/netflix/hystrix/contrib/javanica/annotation/HystrixCollapser.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -974,13 +747,6 @@
     <entry file="file://$PROJECT_DIR$/server-provider2/src/main/java/com/hwy/controller/HystrixController.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server-zuul/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1015,23 +781,6 @@
             <element signature="e#367#368#0" expanded="true" />
             <element signature="e#419#420#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="66">
-            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-server-center/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1070,17 +819,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-server-center/src/main/java/com/hwy/eurekaservercenter/EurekaServerCenterApplication.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="14" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="19" />
+        <state relative-caret-position="174">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server-provider/src/main/java/com/hwy/ServerProviderApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="186">
+          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-zuul/src/main/java/com/hwy/config/AccessFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="34" column="54" lean-forward="true" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-zuul/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-zuul/src/main/java/com/hwy/config/FilterConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1089,22 +865,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server-provider2/src/main/java/com/hwy/ServerProvider2Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="153">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server-center/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server-center/src/main/java/com/hwy/eurekaservercenter/EurekaServerCenterApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server-zuul/src/main/java/com/hwy/ServerZuulApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="165">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server-zuul/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="66">
+            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
