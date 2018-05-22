@@ -13,10 +13,12 @@
     <modules>
         <module>eureka-server-center</module>
         <module>server-provider</module>
+        <module>server-provider2</module>
         <module>server-consumer</module>
         <module>server-consumer-ribbon</module>
         <module>server-consumer-feign</module>
         <module>stream-rabbitmq</module>
+        <module>server-zuul</module>
     </modules>
 
 </project>

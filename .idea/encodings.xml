@@ -3,7 +3,11 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/eureka-server-center" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-consumer-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-consumer-ribbon" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-provider2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-zuul" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stream-rabbitmq" charset="UTF-8" />
   </component>
 </project>

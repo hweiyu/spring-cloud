@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/server-consumer-ribbon/pom.xml" />
         <option value="$PROJECT_DIR$/server-consumer-feign/pom.xml" />
         <option value="$PROJECT_DIR$/stream-rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/server-provider2/pom.xml" />
+        <option value="$PROJECT_DIR$/server-zuul/pom.xml" />
       </list>
     </option>
   </component>

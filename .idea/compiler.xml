@@ -8,9 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server-center" />
         <module name="server-consumer" />
+        <module name="server-consumer-feign" />
+        <module name="server-consumer-ribbon" />
         <module name="server-provider" />
+        <module name="server-provider2" />
+        <module name="server-zuul" />
         <module name="stream-rabbitmq" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="rabbitmq-provider" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
