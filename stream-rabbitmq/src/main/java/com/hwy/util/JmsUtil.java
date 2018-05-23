@@ -31,8 +31,7 @@ public class JmsUtil {
 
     public static void send(String dest, BaseBean bean) {
         try {
-            setVersion(bean);
-            getResolver().resolveDestination(dest).send(MessageBuilder.withPayload(bean).build());
+            getResolver().resolveDestination(dest).send(createMessage(bean));
         } catch (Throwable t) {
             t.printStackTrace();
         }
