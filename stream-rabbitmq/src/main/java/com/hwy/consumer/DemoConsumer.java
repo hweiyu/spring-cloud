@@ -20,4 +20,9 @@ public class DemoConsumer {
     public void consumer(Message<DemoBean> message) {
         System.out.println("===========consumer:" + message.getPayload());
     }
+
+    @StreamListener(Cons.DEMO2_CHANNEL_NAME)
+    public void consumer2(Message<DemoBean> message) {
+        System.out.println("===========consumer2:" + message.getPayload());
+    }
 }

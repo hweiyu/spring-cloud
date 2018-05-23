@@ -7,7 +7,7 @@ package com.hwy.bean;
  * @Description: 描述
  * @date 2018/5/21 17:26
  **/
-public class DemoBean {
+public class DemoBean extends BaseBean {
 
     private String message;
 

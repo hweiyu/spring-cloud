@@ -1,9 +1,10 @@
 package com.hwy.provider;
 
+import com.hwy.util.JmsUtil;
 import com.hwy.bean.DemoBean;
+import com.hwy.cons.Cons;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.annotation.EnableBinding;
-import org.springframework.integration.support.MessageBuilder;
 
 /**
  * @author huangweiyu
@@ -19,7 +20,12 @@ public class DemoProvider {
     private DemoSource demoSource;
 
     public void message(String message) {
-        demoSource.output().send(MessageBuilder.withPayload(new DemoBean(message)).build());
+        demoSource.output().send(JmsUtil.createMessage(new DemoBean(message)));
         System.out.println("=========send message success:" + message);
+    }
+
+    public void message2(String message) {
+        JmsUtil.send(Cons.DEMO2_CHANNEL_NAME, new DemoBean(message));
+        System.out.println("=========send message2 success:" + message);
     }
 }

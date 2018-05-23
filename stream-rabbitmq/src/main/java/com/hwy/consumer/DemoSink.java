@@ -10,4 +10,7 @@ public interface DemoSink {
 
     @Input(Cons.DEMO_CHANNEL_NAME)
     SubscribableChannel input();
+
+    @Input(Cons.DEMO2_CHANNEL_NAME)
+    SubscribableChannel input2();
 }
