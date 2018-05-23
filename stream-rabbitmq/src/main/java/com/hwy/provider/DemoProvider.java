@@ -24,6 +24,7 @@ public class DemoProvider {
         System.out.println("=========send message success:" + message);
     }
 
+    //可以不用配置 MessageChannel
     public void message2(String message) {
         JmsUtil.send(Cons.DEMO2_CHANNEL_NAME, new DemoBean(message));
         System.out.println("=========send message2 success:" + message);

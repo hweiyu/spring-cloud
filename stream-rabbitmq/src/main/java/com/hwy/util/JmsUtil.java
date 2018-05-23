@@ -5,6 +5,8 @@ import org.springframework.cloud.stream.binding.BinderAwareChannelResolver;
 import org.springframework.integration.support.MessageBuilder;
 import org.springframework.messaging.Message;
 
+import java.util.UUID;
+
 /**
  * @author huangweiyu
  * @version V1.0
@@ -29,6 +31,7 @@ public class JmsUtil {
 
     public static void send(String dest, BaseBean bean) {
         try {
+            setVersion(bean);
             getResolver().resolveDestination(dest).send(MessageBuilder.withPayload(bean).build());
         } catch (Throwable t) {
             t.printStackTrace();
@@ -36,6 +39,11 @@ public class JmsUtil {
     }
 
     public static Message<BaseBean> createMessage(BaseBean bean) {
+        setVersion(bean);
         return MessageBuilder.withPayload(bean).build();
+    }
+
+    private static void setVersion(BaseBean bean) {
+        bean.setVersion(UUID.randomUUID().toString().replace("-", ""));
     }
 }

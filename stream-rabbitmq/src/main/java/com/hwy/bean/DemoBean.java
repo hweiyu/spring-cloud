@@ -28,7 +28,8 @@ public class DemoBean extends BaseBean {
     @Override
     public String toString() {
         return "DemoBean{" +
-                "message='" + message + '\'' +
+                "message='" + message + '\'' + "," +
+                "version='" + super.getVersion() + '\'' +
                 '}';
     }
 }
