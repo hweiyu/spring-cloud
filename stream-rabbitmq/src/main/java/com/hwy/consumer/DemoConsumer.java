@@ -2,7 +2,6 @@ package com.hwy.consumer;
 
 import com.hwy.bean.DemoBean;
 import com.hwy.cons.Cons;
-import com.hwy.provider.DemoSource;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.messaging.Message;
