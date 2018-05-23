@@ -4,7 +4,6 @@ import com.hwy.bean.DemoBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.integration.support.MessageBuilder;
-import org.springframework.stereotype.Component;
 
 /**
  * @author huangweiyu
@@ -13,7 +12,6 @@ import org.springframework.stereotype.Component;
  * @Description: 描述
  * @date 2018/5/21 17:25
  **/
-@Component
 @EnableBinding(value = {DemoSource.class})
 public class DemoProvider {
 
