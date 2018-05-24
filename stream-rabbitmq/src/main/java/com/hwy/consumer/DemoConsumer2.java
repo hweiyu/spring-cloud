@@ -14,11 +14,11 @@ import org.springframework.messaging.Message;
  * @date 2018/5/21 17:21
  **/
 @EnableBinding(DemoSink.class)
-public class DemoConsumer implements Consumer<DemoBean> {
+public class DemoConsumer2 implements Consumer<DemoBean> {
 
-    @StreamListener(Cons.DEMO_CHANNEL_NAME)
+    @StreamListener(Cons.DEMO2_CHANNEL_NAME)
     @Override
     public void consumer(Message<DemoBean> message) {
-        System.out.println("===========consumer:" + message.getPayload());
+        System.out.println("===========consumer2:" + message.getPayload());
     }
 }
