@@ -10,4 +10,7 @@ public interface DemoSource {
 
     @Output(Cons.DEMO_CHANNEL_NAME)
     MessageChannel output();
+
+    @Output(Cons.DEMO2_CHANNEL_NAME)
+    MessageChannel output2();
 }

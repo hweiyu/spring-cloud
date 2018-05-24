@@ -1,0 +1,37 @@
+server:
+  port: 5001
+spring:
+  application:
+    name: stream-rabbitmq
+  cloud:
+    stream:
+      bindings:
+        demo_channel:
+          group: g1
+        demo2_channel:
+          group: g1
+      rabbit:
+        bindings:
+          demo_channel:
+            consumer:
+              exchangeType: direct
+              autoBindDlq: true
+              republishToDlq: true
+              bindingRoutingKey: xxx
+            producer:
+              exchangeType: direct
+              bindingRoutingKey: xxx
+          demo2_channel:
+            consumer:
+              exchangeType: direct
+              autoBindDlq: true
+              republishToDlq: true
+              bindingRoutingKey: xxx2
+            producer:
+              exchangeType: direct
+              bindingRoutingKey: xxx2
+  rabbitmq:
+        virtual-host: /
+        host: localhost
+        username: guest
+        password: guest

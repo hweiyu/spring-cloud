@@ -1,5 +1,6 @@
 package com.hwy.consumer;
 
+import com.hwy.anno.Idempotent;
 import com.hwy.bean.DemoBean;
 import com.hwy.cons.Cons;
 import org.springframework.cloud.stream.annotation.EnableBinding;
@@ -16,6 +17,7 @@ import org.springframework.messaging.Message;
 @EnableBinding(DemoSink.class)
 public class DemoConsumer implements Consumer<DemoBean> {
 
+    @Idempotent(previous = "consumer1")
     @StreamListener(Cons.DEMO_CHANNEL_NAME)
     @Override
     public void consumer(Message<DemoBean> message) {
