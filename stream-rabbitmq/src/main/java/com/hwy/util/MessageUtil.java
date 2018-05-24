@@ -14,13 +14,13 @@ import java.util.UUID;
  * @Description: 描述
  * @date 2018/5/23 15:41
  **/
-public class JmsUtil {
+public class MessageUtil {
 
     private static volatile BinderAwareChannelResolver resolver;
 
     private static BinderAwareChannelResolver getResolver() {
         if (resolver == null) {
-            synchronized (JmsUtil.class) {
+            synchronized (MessageUtil.class) {
                 if (resolver == null) {
                     resolver = ApplicationUtil.getBean(BinderAwareChannelResolver.class);
                 }

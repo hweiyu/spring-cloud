@@ -1,6 +1,6 @@
 package com.hwy.provider;
 
-import com.hwy.util.JmsUtil;
+import com.hwy.util.MessageUtil;
 import com.hwy.bean.DemoBean;
 import com.hwy.cons.Cons;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,13 +20,13 @@ public class DemoProvider {
     private DemoSource demoSource;
 
     public void message(String message) {
-        demoSource.output().send(JmsUtil.createMessage(new DemoBean(message)));
+        demoSource.output().send(MessageUtil.createMessage(new DemoBean(message)));
         System.out.println("=========send message success:" + message);
     }
 
     //可以不用配置 MessageChannel
     public void message2(String message) {
-        JmsUtil.send(Cons.DEMO2_CHANNEL_NAME, new DemoBean(message));
+        MessageUtil.send(Cons.DEMO2_CHANNEL_NAME, new DemoBean(message));
         System.out.println("=========send message2 success:" + message);
     }
 }
