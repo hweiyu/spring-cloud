@@ -8,13 +8,13 @@ package com.hwy.util;
  * @Description: 描述
  * @date 2018/5/25 9:58
  **/
-public class SonwFlakeUtil {
+public class SnowFlakeUtil {
 
     private static volatile SnowFlake snowFlake;
 
     private static SnowFlake getSnowFlake() {
         if (snowFlake == null) {
-            synchronized (SonwFlakeUtil.class) {
+            synchronized (SnowFlakeUtil.class) {
                 if (snowFlake == null) {
                     snowFlake = new SnowFlake();
                 }

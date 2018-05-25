@@ -28,8 +28,7 @@ public class DemoMessage extends BaseMessage {
     @Override
     public String toString() {
         return "DemoMessage{" +
-                "message='" + message + '\'' + "," +
-                "version='" + super.getVersion() + '\'' +
+                "message='" + message + '\'' +
                 '}';
     }
 }

@@ -1,6 +1,7 @@
 package com.hwy.util;
 
 import com.hwy.bean.BaseMessage;
+import com.hwy.cons.Cons;
 import org.springframework.cloud.stream.binding.BinderAwareChannelResolver;
 import org.springframework.integration.support.MessageBuilder;
 import org.springframework.messaging.Message;
@@ -35,12 +36,16 @@ public class MessageUtil {
         }
     }
 
+    /**
+     * 通过setHeader设置全局唯一标识，用于消费者端幂等处理
+     * @param message
+     * @return
+     */
     public static Message<BaseMessage> createMessage(BaseMessage message) {
-        setVersion(message);
-        return MessageBuilder.withPayload(message).build();
+        return MessageBuilder
+                .withPayload(message)
+                .setHeaderIfAbsent(Cons.UNIQUE_IDENTITY, SnowFlakeUtil.getUniqueIdentity())
+                .build();
     }
 
-    private static void setVersion(BaseMessage message) {
-        message.setVersion(SonwFlakeUtil.getUniqueIdentity());
-    }
 }

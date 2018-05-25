@@ -1,8 +1,8 @@
 package com.hwy.provider;
 
 import com.hwy.bean.DemoMessage;
+import com.hwy.cons.ChannelCons;
 import com.hwy.util.MessageUtil;
-import com.hwy.cons.Cons;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.Output;
@@ -32,16 +32,16 @@ public class DemoProvider {
      * @param message
      */
     public void message2(String message) {
-        MessageUtil.send(Cons.DEMO2_CHANNEL_NAME, new DemoMessage(message));
+        MessageUtil.send(ChannelCons.DEMO2_CHANNEL_NAME, new DemoMessage(message));
         System.out.println("=========send message2 success:" + message);
     }
 
     @Component
     public interface DemoSource {
-        @Output(Cons.DEMO_CHANNEL_NAME)
+        @Output(ChannelCons.DEMO_CHANNEL_NAME)
         MessageChannel output();
 
-        @Output(Cons.DEMO2_CHANNEL_NAME)
+        @Output(ChannelCons.DEMO2_CHANNEL_NAME)
         MessageChannel output2();
     }
 }

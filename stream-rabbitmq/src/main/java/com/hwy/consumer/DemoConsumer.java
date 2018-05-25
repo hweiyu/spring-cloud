@@ -2,7 +2,7 @@ package com.hwy.consumer;
 
 import com.hwy.anno.Idempotent;
 import com.hwy.bean.DemoMessage;
-import com.hwy.cons.Cons;
+import com.hwy.cons.ChannelCons;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.Input;
 import org.springframework.cloud.stream.annotation.StreamListener;
@@ -20,14 +20,14 @@ import org.springframework.messaging.SubscribableChannel;
 public class DemoConsumer implements Consumer<DemoMessage> {
 
     @Idempotent(previous = "consumer1")
-    @StreamListener(Cons.DEMO_CHANNEL_NAME)
+    @StreamListener(ChannelCons.DEMO_CHANNEL_NAME)
     @Override
     public void consumer(Message<DemoMessage> message) {
         System.out.println("===========consumer:" + message.getPayload());
     }
 
     public interface DemoSink {
-        @Input(Cons.DEMO_CHANNEL_NAME)
+        @Input(ChannelCons.DEMO_CHANNEL_NAME)
         SubscribableChannel input();
     }
 }

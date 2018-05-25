@@ -1,7 +1,7 @@
 package com.hwy.consumer;
 
 import com.hwy.bean.DemoMessage;
-import com.hwy.cons.Cons;
+import com.hwy.cons.ChannelCons;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.Input;
 import org.springframework.cloud.stream.annotation.StreamListener;
@@ -18,14 +18,14 @@ import org.springframework.messaging.SubscribableChannel;
 @EnableBinding(DemoConsumer2.DemoSink.class)
 public class DemoConsumer2 implements Consumer<DemoMessage> {
 
-    @StreamListener(Cons.DEMO2_CHANNEL_NAME)
+    @StreamListener(ChannelCons.DEMO2_CHANNEL_NAME)
     @Override
     public void consumer(Message<DemoMessage> message) {
         System.out.println("===========consumer2:" + message.getPayload());
     }
 
     public interface DemoSink {
-        @Input(Cons.DEMO2_CHANNEL_NAME)
+        @Input(ChannelCons.DEMO2_CHANNEL_NAME)
         SubscribableChannel input();
     }
 }

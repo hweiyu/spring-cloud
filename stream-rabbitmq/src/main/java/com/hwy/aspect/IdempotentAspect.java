@@ -1,7 +1,7 @@
 package com.hwy.aspect;
 
 import com.hwy.anno.Idempotent;
-import com.hwy.bean.BaseMessage;
+import com.hwy.cons.Cons;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -29,10 +29,9 @@ public class IdempotentAspect {
                 }
             }
             if (null != message) {
-                Object baseMessage = message.getPayload();
-                if (baseMessage instanceof BaseMessage) {
-                    BaseMessage msg = (BaseMessage) baseMessage;
-                    System.out.println("todo idempotent check current version is : " + msg.getVersion());
+                Object uniqueIdentity = message.getHeaders().get(Cons.UNIQUE_IDENTITY);
+                if (null != uniqueIdentity) {
+                    System.out.println("todo idempotent check current version is : " + uniqueIdentity);
                     //todo idempotent check
                     return null;
                 }
