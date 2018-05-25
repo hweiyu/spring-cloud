@@ -7,9 +7,9 @@ spring:
     stream:
       bindings:
         demo_channel:
-          group: g1
+          group: demoGroup
         demo2_channel:
-          group: g1
+          group: demoGroup
       rabbit:
         bindings:
           demo_channel:
@@ -17,19 +17,28 @@ spring:
               exchangeType: direct
               autoBindDlq: true
               republishToDlq: true
-              bindingRoutingKey: xxx
+              deadLetterQueueName: dead.letter.queue
+              deadLetterRoutingKey: dead.letter.routing.key
+              bindingRoutingKey: demoRoutingKey
             producer:
               exchangeType: direct
-              bindingRoutingKey: xxx
+              bindingRoutingKey: demoRoutingKey
           demo2_channel:
             consumer:
               exchangeType: direct
               autoBindDlq: true
               republishToDlq: true
-              bindingRoutingKey: xxx2
+              deadLetterQueueName: dead.letter.queue
+              deadLetterRoutingKey: dead.letter.routing.key
+              bindingRoutingKey: demoRoutingKey
             producer:
               exchangeType: direct
-              bindingRoutingKey: xxx2
+              bindingRoutingKey: demoRoutingKey
+          dead_letter_channel:
+            consumer:
+              exchangeType: direct
+            producer:
+              exchangeType: direct
   rabbitmq:
         virtual-host: /
         host: localhost

@@ -42,6 +42,9 @@ public class DemoProvider {
         MessageChannel output();
 
         @Output(ChannelCons.DEMO2_CHANNEL_NAME)
-        MessageChannel output2();
+        MessageChannel channel2();
+
+        @Output(ChannelCons.DEAD_LETTER_CHANNEL_NAME)
+        MessageChannel deadLetterChannel();
     }
 }

@@ -7,6 +7,7 @@ import org.springframework.cloud.stream.annotation.Input;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.SubscribableChannel;
+import org.springframework.stereotype.Component;
 
 /**
  * @author huangweiyu
@@ -24,6 +25,7 @@ public class DemoConsumer2 implements Consumer<DemoMessage> {
         System.out.println("===========consumer2:" + message.getPayload());
     }
 
+    @Component
     public interface DemoSink {
         @Input(ChannelCons.DEMO2_CHANNEL_NAME)
         SubscribableChannel input();
