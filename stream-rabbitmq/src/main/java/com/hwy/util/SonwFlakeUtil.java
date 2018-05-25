@@ -16,7 +16,7 @@ public class SonwFlakeUtil {
         if (snowFlake == null) {
             synchronized (SonwFlakeUtil.class) {
                 if (snowFlake == null) {
-                    snowFlake = new SnowFlake(1, 1);
+                    snowFlake = new SnowFlake();
                 }
             }
         }
