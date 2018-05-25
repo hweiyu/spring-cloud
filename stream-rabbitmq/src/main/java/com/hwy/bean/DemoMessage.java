@@ -7,13 +7,13 @@ package com.hwy.bean;
  * @Description: 描述
  * @date 2018/5/21 17:26
  **/
-public class DemoBean extends BaseBean {
+public class DemoMessage extends BaseMessage {
 
     private String message;
 
-    public DemoBean() {}
+    public DemoMessage() {}
 
-    public DemoBean(String message) {
+    public DemoMessage(String message) {
         this.message = message;
     }
 
@@ -27,7 +27,7 @@ public class DemoBean extends BaseBean {
 
     @Override
     public String toString() {
-        return "DemoBean{" +
+        return "DemoMessage{" +
                 "message='" + message + '\'' + "," +
                 "version='" + super.getVersion() + '\'' +
                 '}';

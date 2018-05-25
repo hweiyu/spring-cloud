@@ -1,11 +1,9 @@
 package com.hwy.util;
 
-import com.hwy.bean.BaseBean;
+import com.hwy.bean.BaseMessage;
 import org.springframework.cloud.stream.binding.BinderAwareChannelResolver;
 import org.springframework.integration.support.MessageBuilder;
 import org.springframework.messaging.Message;
-
-import java.util.UUID;
 
 /**
  * @author huangweiyu
@@ -29,20 +27,20 @@ public class MessageUtil {
         return resolver;
     }
 
-    public static void send(String dest, BaseBean bean) {
+    public static void send(String dest, BaseMessage message) {
         try {
-            getResolver().resolveDestination(dest).send(createMessage(bean));
+            getResolver().resolveDestination(dest).send(createMessage(message));
         } catch (Throwable t) {
             t.printStackTrace();
         }
     }
 
-    public static Message<BaseBean> createMessage(BaseBean bean) {
-        setVersion(bean);
-        return MessageBuilder.withPayload(bean).build();
+    public static Message<BaseMessage> createMessage(BaseMessage message) {
+        setVersion(message);
+        return MessageBuilder.withPayload(message).build();
     }
 
-    private static void setVersion(BaseBean bean) {
-        bean.setVersion(UUID.randomUUID().toString().replace("-", ""));
+    private static void setVersion(BaseMessage message) {
+        message.setVersion(SonwFlakeUtil.getUniqueIdentity());
     }
 }

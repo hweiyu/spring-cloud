@@ -1,7 +1,7 @@
 package com.hwy.aspect;
 
 import com.hwy.anno.Idempotent;
-import com.hwy.bean.BaseBean;
+import com.hwy.bean.BaseMessage;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -29,10 +29,10 @@ public class IdempotentAspect {
                 }
             }
             if (null != message) {
-                Object baseBean = message.getPayload();
-                if (baseBean instanceof BaseBean) {
-                    BaseBean bean = (BaseBean) baseBean;
-                    System.out.println("version:" + bean.getVersion());
+                Object baseMessage = message.getPayload();
+                if (baseMessage instanceof BaseMessage) {
+                    BaseMessage msg = (BaseMessage) baseMessage;
+                    System.out.println("todo idempotent check current version is : " + msg.getVersion());
                     //todo idempotent check
                     return null;
                 }

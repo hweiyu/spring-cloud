@@ -7,18 +7,18 @@ package com.hwy.bean;
  * @Description: 描述
  * @date 2018/5/23 15:52
  **/
-public class BaseBean {
+public class BaseMessage {
 
     /**
      * 全局唯一标识，用于消费者端幂等处理
      */
-    private String version;
+    private Long version;
 
-    public String getVersion() {
+    public Long getVersion() {
         return version;
     }
 
-    public void setVersion(String version) {
+    public void setVersion(Long version) {
         this.version = version;
     }
 }

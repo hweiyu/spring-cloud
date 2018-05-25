@@ -1,10 +1,13 @@
 package com.hwy.provider;
 
+import com.hwy.bean.DemoMessage;
 import com.hwy.util.MessageUtil;
-import com.hwy.bean.DemoBean;
 import com.hwy.cons.Cons;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.annotation.EnableBinding;
+import org.springframework.cloud.stream.annotation.Output;
+import org.springframework.messaging.MessageChannel;
+import org.springframework.stereotype.Component;
 
 /**
  * @author huangweiyu
@@ -13,20 +16,32 @@ import org.springframework.cloud.stream.annotation.EnableBinding;
  * @Description: 描述
  * @date 2018/5/21 17:25
  **/
-@EnableBinding(value = {DemoSource.class})
+@EnableBinding(value = {DemoProvider.DemoSource.class})
 public class DemoProvider {
 
     @Autowired
     private DemoSource demoSource;
 
     public void message(String message) {
-        demoSource.output().send(MessageUtil.createMessage(new DemoBean(message)));
+        demoSource.output().send(MessageUtil.createMessage(new DemoMessage(message)));
         System.out.println("=========send message success:" + message);
     }
 
-    //可以不用配置 MessageChannel
+    /**
+     * 可以不用配置 MessageChannel，工具类动态生成并指定
+     * @param message
+     */
     public void message2(String message) {
-        MessageUtil.send(Cons.DEMO2_CHANNEL_NAME, new DemoBean(message));
+        MessageUtil.send(Cons.DEMO2_CHANNEL_NAME, new DemoMessage(message));
         System.out.println("=========send message2 success:" + message);
+    }
+
+    @Component
+    public interface DemoSource {
+        @Output(Cons.DEMO_CHANNEL_NAME)
+        MessageChannel output();
+
+        @Output(Cons.DEMO2_CHANNEL_NAME)
+        MessageChannel output2();
     }
 }
