@@ -33,7 +33,7 @@ public class IdempotentAspect {
                 if (null != uniqueIdentity) {
                     System.out.println("====== from idem aspect, todo idempotent check current version is : " + uniqueIdentity);
                     //todo idempotent check
-                    return null;
+//                    return null;
                 }
             }
             return point.proceed();
