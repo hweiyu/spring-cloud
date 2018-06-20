@@ -27,24 +27,9 @@ public class DemoProvider {
         System.out.println("=========send message success:" + message);
     }
 
-    /**
-     * 可以不用配置 MessageChannel，工具类动态生成并指定
-     * @param message
-     */
-    public void message2(String message) {
-        MessageUtil.send(ChannelCons.DEMO2_CHANNEL_NAME, new DemoMessage(message));
-        System.out.println("=========send message2 success:" + message);
-    }
-
     @Component
     public interface DemoSource {
         @Output(ChannelCons.DEMO_CHANNEL_NAME)
         MessageChannel output();
-
-        @Output(ChannelCons.DEMO2_CHANNEL_NAME)
-        MessageChannel channel2();
-
-        @Output(ChannelCons.DEAD_LETTER_CHANNEL_NAME)
-        MessageChannel deadLetterChannel();
     }
 }

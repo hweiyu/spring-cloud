@@ -7,49 +7,20 @@ spring:
     stream:
       bindings:
         demo_channel:
-          group: demo_group
-          destination: demo_exchange
-        demo2_channel:
-          group: demo_group2
-          destination: demo2_exchange
-        dead_letter_direct_channel:
-          group: dl_group
-          destination: dead_letter_direct_exchange
+          group: demoGroup
+          destination: demoDest
       rabbit:
         bindings:
           demo_channel:
             consumer:
               exchangeType: direct
-              autoBindDlq: true
-              republishToDlq: true
-              deadLetterQueueName: dead_letter_queue
-              deadLetterRoutingKey: dead_letter_routing_key
               bindingRoutingKey: demoRoutingKey
-              messageTtl: 5000
             producer:
               exchangeType: direct
               bindingRoutingKey: demoRoutingKey
-          demo2_channel:
-            consumer:
-              exchangeType: direct
-              autoBindDlq: true
-              republishToDlq: true
-              deadLetterQueueName: dead_letter_queue
-              deadLetterRoutingKey: dead_letter_routing_key
-              bindingRoutingKey: demoRoutingKey
-              messageTtl: 5000
-            producer:
-              exchangeType: direct
-              bindingRoutingKey: demoRoutingKey
-          dead_letter_direct_channel:
-            consumer:
-              exchangeType: direct
-              bindingRoutingKey: deadLetterDirectRoutingKey
-            producer:
-              exchangeType: direct
-              bindingRoutingKey: deadLetterDirectRoutingKey
   rabbitmq:
         virtual-host: /
-        host: localhost
+        host: 127.0.0.1
+        port: 5672
         username: guest
         password: guest

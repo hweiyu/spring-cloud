@@ -31,7 +31,7 @@ public class IdempotentAspect {
             if (null != message) {
                 Object uniqueIdentity = message.getHeaders().get(Cons.UNIQUE_IDENTITY);
                 if (null != uniqueIdentity) {
-                    System.out.println("todo idempotent check current version is : " + uniqueIdentity);
+                    System.out.println("====== from idem aspect, todo idempotent check current version is : " + uniqueIdentity);
                     //todo idempotent check
                     return null;
                 }
