@@ -9,17 +9,25 @@ spring:
         demo_channel:
           group: demoGroup
           destination: demoDest
+        dead_letter_channel:
+          group: deadLetterGroup
+          destination: deadLetterDest
       rabbit:
         bindings:
           demo_channel:
             consumer:
               exchangeType: direct
-              bindingRoutingKey: demoRoutingKey
               autoBindDlq: true
               republishToDlq: true
+              deadLetterExchange: deadLetterDest
+              deadLetterQueueName: deadLetterDest.deadLetterGroup
             producer:
               exchangeType: direct
-              bindingRoutingKey: demoRoutingKey
+          dead_letter_channel:
+            consumer:
+              exchangeType: direct
+            producer:
+              exchangeType: direct
   rabbitmq:
         virtual-host: /
         host: 127.0.0.1
