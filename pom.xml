@@ -19,6 +19,7 @@
         <module>server-consumer-feign</module>
         <module>stream-rabbitmq</module>
         <module>server-zuul</module>
+        <module>zipkin-server</module>
     </modules>
 
 </project>

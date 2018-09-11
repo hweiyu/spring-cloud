@@ -15,4 +15,7 @@ public interface HelloService {
 
     @GetMapping("hello")
     String remoteHello();
+
+    @GetMapping("trace")
+    String remoteTrace();
 }

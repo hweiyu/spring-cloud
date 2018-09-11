@@ -28,4 +28,10 @@ public class HelloController {
         String url = "http://127.0.0.1:2001/hello";
         return "remote message is :" + restTemplate.getForObject(url, String.class);
     }
+
+    @RequestMapping("sleuth/trace")
+    public String remoteTrace() {
+        String url = "http://127.0.0.1:2001/trace";
+        return "remote message is : :" + restTemplate.getForObject(url, String.class);
+    }
 }

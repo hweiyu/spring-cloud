@@ -4,7 +4,6 @@ import com.hwy.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 /**
  * @author huangweiyu
@@ -27,5 +26,11 @@ public class HelloController {
     @RequestMapping("remote/hello")
     public String remoteHello() {
         return "this is feign consumer, remote message is :" + helloService.remoteHello();
+    }
+
+    @RequestMapping("sleuth/trace")
+    public String remoteTrace() {
+        System.out.println("=====consumer-feign call method: /sleuth/trace");
+        return "this is feign consumer, remote message is :" + helloService.remoteTrace();
     }
 }
